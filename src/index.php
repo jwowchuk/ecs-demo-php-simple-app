@@ -20,6 +20,7 @@
                 <h2>THIS IS VERSION 1.4</h2>
                 <p>Your PHP application is now running on a container in AWS.</p>
                 <p>The container is running PHP version <?php echo phpversion(); ?>.</p>
+                <p>Jim Wowchuk</p>
                 <?php
                         $myfile = fopen("/var/www/my-vol/date", "r") or die("");
                         echo fread($myfile,filesize("/var/www/my-vol/date"));
